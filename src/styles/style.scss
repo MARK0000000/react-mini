@@ -1,0 +1,37 @@
+
+@import 'quiz';
+@import 'invite';
+@import 'modal';
+@import 'photos';
+@import 'currency-convertor';
+
+body{
+    margin: 0;
+}
+.App{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 70% minmax(840px, auto);
+    
+    height: 100vh;   
+}
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 10px #000;
+    &_1{
+        background-color: #6a5be2;
+    }
+    &_3{
+        background-color: #dfe2ff
+    }
+    &_4{
+        background-color: #f9f2ed;
+    }
+    &_5{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color: #eff0f1;
+    }
+}
